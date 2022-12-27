@@ -9,8 +9,8 @@
 
 <br />
 
-<a href="https://img.shields.io/npm/l/@ng-action-outlet/core.svg">
-    <img src="https://img.shields.io/npm/l/@ng-action-outlet/core.svg" /></a>
+<a href="https://img.shields.io/npm/l/ng-action-outlet/dist/core.svg">
+    <img src="https://img.shields.io/npm/l/ng-action-outlet/dist/core.svg" /></a>
 <a href="https://github.com/klemenoslaj/ng-action-outlet/releases">
     <img src="https://img.shields.io/github/tag/klemenoslaj/ng-action-outlet.svg" /></a>
 <a href="https://snyk.io/test/github/klemenoslaj/ng-action-outlet?targetFile=package.json">
@@ -33,11 +33,11 @@ The most natural use case is when back-end is in charge over the visibility of a
 
 **DEMO 1** _Basic_
 
-[![Edit @ng-action-outlet/material DEMO](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ng-action-outletmaterial-demo-t1n4n?fontsize=14&module=%2Fsrc%2Fapp%2Fapp.component.ts)
+[![Edit ng-action-outlet/dist/material DEMO](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ng-action-outletmaterial-demo-t1n4n?fontsize=14&module=%2Fsrc%2Fapp%2Fapp.component.ts)
 
 **DEMO 2** _Advanced_
 
-[![Edit @ng-action-outlet/material DEMO](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/material-angular-shell-vttrp?fontsize=14&module=%2Fsrc%2Fapp%2Fapp.component.ts)
+[![Edit ng-action-outlet/dist/material DEMO](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/material-angular-shell-vttrp?fontsize=14&module=%2Fsrc%2Fapp%2Fapp.component.ts)
 
 ## Getting started
 
@@ -48,18 +48,18 @@ Choose the tool that is appropriate for your project.
 
 #### NPM
 
-`npm install @ng-action-outlet/core`
+`npm install ng-action-outlet/dist/core`
 
 #### YARN
 
-`yarn add @ng-action-outlet/core`
+`yarn add ng-action-outlet/dist/core`
 
 ### Step 2: Import `ActionOutletModule`
 
 Import Action Outlet **NgModule** to your Angular module
 
 ```typescript
-import { ActionOutletModule } from '@ng-action-outlet/core';
+import { ActionOutletModule } from 'ng-action-outlet/dist/core';
 
 @NgModule({
   ...
@@ -76,7 +76,7 @@ Provide action class and use value pointing to your component class,
 so that action outlet can associate component to provided action.
 
 ```typescript
-import { ActionOutletModule, ActionButton, ActionGroup, ActionToggle } from '@ng-action-outlet/core';
+import { ActionOutletModule, ActionButton, ActionGroup, ActionToggle } from 'ng-action-outlet/dist/core';
 
 import { ExampleButtonComponent } from './example-button.component';
 import { ExampleGroupComponent } from './example-group.component';
@@ -106,7 +106,7 @@ In order to override your default settings, do the same as initially in a module
 but only for actions that you actually wish to change.
 
 ```typescript
-import { ActionToggle } from '@ng-action-outlet/core';
+import { ActionToggle } from 'ng-action-outlet/dist/core';
 
 import { ExampleCheckboxComponent } from './example-checkbox.component';
 
@@ -126,7 +126,7 @@ export class ExampleComponent { }
 Create actions in a component class so that they can be accessed from the template.
 
 ```typescript
-import { ActionOutletFactory } from '@ng-action-outlet/core';
+import { ActionOutletFactory } from 'ng-action-outlet/dist/core';
 
 @Component(...)
 export class ExampleComponent implements OnInit {

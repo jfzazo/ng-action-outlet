@@ -16,8 +16,8 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "paths": {
-      "@ng-action-outlet/core": ["dist/core", "projects/core/src/public_api.ts"],
-      "@ng-action-outlet/material": ["dist/material", "projects/material/src/public_api.ts"]
+      "ng-action-outlet/dist/core": ["dist/core", "projects/core/src/public_api.ts"],
+      "ng-action-outlet/dist/material": ["dist/material", "projects/material/src/public_api.ts"]
     }
   },
   "angularCompilerOptions": {

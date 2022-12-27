@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBinding, Inject } from '@angular/core';
-import { ActionGroup, ActionGroupComponentImpl } from '@ng-action-outlet/core';
+import { ActionGroup, ActionGroupComponentImpl } from 'ng-action-outlet/dist/core';
 
 import { trackByAction, TrackByAction } from './common';
 import { ACTION_ICON_TYPE_TOKEN, ICON_TYPE } from './action-icon-type-token';

@@ -1,4 +1,4 @@
-import { AnyAction, ActionGroup, ActionAbstract } from '@ng-action-outlet/core';
+import { AnyAction, ActionGroup, ActionAbstract } from 'ng-action-outlet/dist/core';
 
 export type TrackByAction = (action: AnyAction) => number;
 export type IsMenuItem = (action?: AnyAction) => boolean;

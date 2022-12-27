@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy, ViewEncapsulation, HostBinding, Inject } from '@angular/core';
-import { ActionButton, ActionButtonComponentImpl } from '@ng-action-outlet/core';
+import { ActionButton, ActionButtonComponentImpl } from 'ng-action-outlet/dist/core';
 
 import { ICON_TYPE, ACTION_ICON_TYPE_TOKEN } from './action-icon-type-token';
 

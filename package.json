@@ -1,14 +1,15 @@
 {
-  "name": "ng-action-outlet-srcs",
+  "name": "ng-action-outlet",
   "version": "0.0.0-development",
-  "homepage": "https://klemenoslaj.github.io/ng-action-outlet/",
+  "homepage": "https://github.com/jfzazo/ng-action-outlet/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/klemenoslaj/ng-action-outlet.git"
+    "url": "https://github.com/jfzazo/ng-action-outlet.git"
   },
   "scripts": {
     "build": "ng build core && ng build material",
     "build:prod": "ng build core --prod && ng build material --prod",
+    "prepare": "yarn build",
     "test:once": "ng test core --watch false --browsers ChromeHeadless --code-coverage",
     "docs:coverage": "compodoc -p ./tsconfig.docs.json --disableLifeCycleHooks --disableInternal --coverageMinimumPerFile 100",
     "docs:build.prod": "yarn docs:coverage && compodoc -p ./tsconfig.docs.json --disableLifeCycleHooks --disableInternal --disablePrivate --disableProtected --name NgActionOutlet --output docs",
@@ -18,25 +19,29 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^13.3.0",
-    "@angular/cdk": "^13.3.0",
-    "@angular/common": "^13.3.0",
-    "@angular/compiler": "^13.3.0",
-    "@angular/core": "^13.3.0",
-    "@angular/forms": "^13.3.0",
-    "@angular/material": "^13.3.0",
-    "@angular/platform-browser": "^13.3.0",
-    "@angular/platform-browser-dynamic": "^13.3.0",
-    "@angular/router": "^13.3.0",
+    "@angular/animations": "^15.0.4",
+    "@angular/cdk": "^15.0.3",
+    "@angular/common": "^15.0.4",
+    "@angular/compiler": "^15.0.4",
+    "@angular/core": "^15.0.4",
+    "@angular/forms": "^15.0.4",
+    "@angular/material": "^15.0.3",
+    "@angular/platform-browser": "^15.0.4",
+    "@angular/platform-browser-dynamic": "^15.0.4",
+    "@angular/router": "^15.0.4",
+    "jasmine-core": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "ng-packagr": "^15.0.3",
     "rxjs": "^7.5.5",
     "tslib": "^2.3.1",
+    "typescript": "^4.8.4",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~13.3.0",
-    "@angular/cli": "^13.3.0",
-    "@angular/compiler-cli": "^13.3.0",
-    "@angular/language-service": "^13.3.0",
+    "@angular-devkit/build-angular": "~15.0.4",
+    "@angular/cli": "^15.0.4",
+    "@angular/compiler-cli": "^15.0.4",
+    "@angular/language-service": "^15.0.4",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "@commitlint/travis-cli": "^8.1.0",
@@ -48,14 +53,11 @@
     "coveralls": "^3.0.2",
     "cz-conventional-changelog": "^3.0.2",
     "husky": "^3.0.0",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.3.2",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^13.3.0",
     "prettier": "^2.6.0",
     "protractor": "~7.0.0",
     "remark-cli": "^7.0.0",
@@ -63,8 +65,7 @@
     "semantic-release": "^15.10.5",
     "shelljs": "^0.8.3",
     "ts-node": "~10.7.0",
-    "tslint": "~6.1.0",
-    "typescript": "~4.6.2"
+    "tslint": "~6.1.0"
   },
   "release": {
     "packages": "dist",
@@ -86,7 +87,7 @@
     }
   },
   "engines": {
-    "node": "^12.20.0 || ^14.15.0 || ^16.10.0",
+    "node": ">= 12.20",
     "yarn": ">=1.21.1 <2",
     "npm": "Please use yarn instead of NPM to install dependencies"
   }

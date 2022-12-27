@@ -157,7 +157,8 @@
   },
   "defaultProject": "playground",
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "yarn",
+    "analytics": false
   },
   "schematics": {
     "@schematics/angular:component": {

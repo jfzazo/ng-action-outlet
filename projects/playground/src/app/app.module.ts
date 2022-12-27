@@ -6,8 +6,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ActionOutletModule } from '@ng-action-outlet/core';
-import { ActionMatModule, ICON_TYPE } from '@ng-action-outlet/material';
+import { ActionOutletModule } from 'ng-action-outlet/dist/core';
+import { ActionMatModule, ICON_TYPE } from 'ng-action-outlet/dist/material';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';

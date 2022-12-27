@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { ActionGroup, ActionButtonEvent, ActionButton, AnyAction, ActionAnchor } from '@ng-action-outlet/core';
+import { ActionGroup, ActionButtonEvent, ActionButton, AnyAction, ActionAnchor } from 'ng-action-outlet/dist/core';
 
 @Component({
   selector: 'app-root',

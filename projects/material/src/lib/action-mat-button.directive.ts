@@ -1,7 +1,7 @@
 import { Directive, Input, OnDestroy, ElementRef, Renderer2, Optional, Inject, ChangeDetectorRef } from '@angular/core';
 import { MatMenuTrigger, MatMenuItem } from '@angular/material/menu';
 import { MatButton } from '@angular/material/button';
-import { ActionButton, ActionGroup, ActionAnchor } from '@ng-action-outlet/core';
+import { ActionButton, ActionGroup, ActionAnchor } from 'ng-action-outlet/dist/core';
 import { Subject, fromEvent, ReplaySubject } from 'rxjs';
 import { takeUntil, switchMap, filter } from 'rxjs/operators';
 

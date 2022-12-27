@@ -1,7 +1,7 @@
 import { HostBinding, Inject } from '@angular/core';
 import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
-import { ActionButton } from '@ng-action-outlet/core';
-import { ActionAnchor } from '@ng-action-outlet/core';
+import { ActionButton } from 'ng-action-outlet/dist/core';
+import { ActionAnchor } from 'ng-action-outlet/dist/core';
 import { ACTION_ICON_TYPE_TOKEN, ICON_TYPE } from './action-icon-type-token';
 
 @Component({

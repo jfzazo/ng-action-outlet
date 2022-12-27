@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy, ViewEncapsulation, Inject, HostBinding } from '@angular/core';
-import { ActionAnchor, ActionAnchorComponentImpl } from '@ng-action-outlet/core';
+import { ActionAnchor, ActionAnchorComponentImpl } from 'ng-action-outlet/dist/core';
 
 import { ICON_TYPE, ACTION_ICON_TYPE_TOKEN } from './action-icon-type-token';
 

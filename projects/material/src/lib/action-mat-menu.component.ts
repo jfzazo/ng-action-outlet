@@ -7,7 +7,7 @@ import {
   ViewEncapsulation,
   Inject,
 } from '@angular/core';
-import { AnyAction, ActionGroup, ActionGroupComponentImpl, ActionAnchor } from '@ng-action-outlet/core';
+import { AnyAction, ActionGroup, ActionGroupComponentImpl, ActionAnchor } from 'ng-action-outlet/dist/core';
 import { MatMenu } from '@angular/material/menu';
 
 import { trackByAction, TrackByAction } from './common';
